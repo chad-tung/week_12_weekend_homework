@@ -17,7 +17,15 @@
     <a href="" id="main-link"></a>
   </header>
   <main>
-    <select id="pokemon-select"></select>
+    <div class="selections">
+      <h5>Select a pokemon: </h3>
+      <select id="pokemon-select"></select>
+    </div>
+    <br>
+    <div class="selections">
+      <h5>Select a pokemon to compare: </h3>
+      <select id="compare-pokemon-select"></select>
+    </div>
     <select id="compare-pokemon-select"></select>
   </main>
   <div id="stats">
@@ -38,7 +46,7 @@
       </thead>
       <tbody id="stat-table-body"></tbody>
     </table>
-    <div id="power-pie-chart"></div>
+    <div id="power-pie-chart" class="pie-chart"></div>
   </div>
 
   <br>
@@ -62,12 +70,14 @@
       </thead>
       <tbody id="compare-stat-table-body"></tbody>
     </table>
-    <div id="compare-power-pie-chart"></div>
+    <div id="compare-power-pie-chart" class="pie-chart"></div>
   </div>
 
   <br>
 
   <div id="bar-chart"></div>
+
+  <br>
 
   <div id="moves">
     <div id="pokemon-moves">
