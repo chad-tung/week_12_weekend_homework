@@ -8,6 +8,7 @@
   <script src="http://code.highcharts.com/highcharts.js"></script>
   <script src="app.js"></script>
   <script src="pieChart.js"></script>
+  <script src="barChart.js"></script>
   <link rel="stylesheet" href="/main.css"/>
 </head>
 <body>
@@ -17,20 +18,69 @@
   </header>
   <main>
     <select id="pokemon-select"></select>
+    <select id="compare-pokemon-select"></select>
   </main>
-  <h2 id="pokemon-name"></h2>
-  <h4 id="pokemon-type"></h4>
-  <img id="pokemon-pic" src="" alt="">
   <div id="stats">
+    <div id="pokemon">
+      <h2 id="pokemon-name"></h2>
+      <h4 id="pokemon-type"></h4>
+      <img id="pokemon-pic" src="" alt="">
+    </div>
     <table id="stat-table">
+      <thead>
+        <tr>
+          <th id="pokemon-table-heading"></th>
+        </tr>
+        <tr>
+          <th>Stat Type</th>
+          <th>Base Stat</th>
+        </tr>
+      </thead>
+      <tbody id="stat-table-body"></tbody>
     </table>
     <div id="power-pie-chart"></div>
   </div>
 
-  <div id="pokemon-moves">
-    <h4>Move Pool</h4>
-    <ul id="move-list"></ul>
+  <br>
+
+  <div id="compare-stats">
+    <div id="compare-pokemon">
+      <h2 id="compare-pokemon-name"></h2>
+      <h4 id="compare-pokemon-type"></h4>
+      <img id="compare-pokemon-pic" src="" alt="">
+    </div>
+
+    <table id="compare-stat-table">
+      <thead>
+        <tr >
+          <th id="compare-pokemon-table-heading"></th>
+        </tr>
+        <tr>
+          <th>Stat Type</th>
+          <th>Base Stat</th>
+        </tr>
+      </thead>
+      <tbody id="compare-stat-table-body"></tbody>
+    </table>
+    <div id="compare-power-pie-chart"></div>
   </div>
+
+  <br>
+
+  <div id="bar-chart"></div>
+
+  <div id="moves">
+    <div id="pokemon-moves">
+      <h4>Move Pool</h4>
+      <ul id="move-list"></ul>
+    </div>
+
+    <div id="compare-pokemon-moves">
+      <h4>Compared Move Pool</h4>
+      <ul id="compare-move-list"></ul>
+    </div>
+  </div>
+
 
 
 </body>

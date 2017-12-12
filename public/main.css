@@ -3,7 +3,22 @@ body {
     margin: 20px;
 }
 
+#pokemon{
+  display: flex;
+  flex-direction: column;
+}
+
+#compare-pokemon{
+  display: flex;
+  flex-direction: column;
+}
+
 #stats{
+  display: flex;
+  flex-direction: row;
+}
+
+#compare-stats{
   display: flex;
   flex-direction: row;
 }
@@ -11,7 +26,19 @@ body {
 #pokemon-moves{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 20px;
+}
+
+#compare-pokemon-moves{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#moves{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #page-title{
@@ -22,6 +49,11 @@ body {
 }
 
 #stat-table{
+  padding: 10px;
+  margin: 20px;
+}
+
+#compare-stat-table{
   padding: 10px;
   margin: 20px;
 }
